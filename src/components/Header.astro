@@ -1,66 +1,11 @@
----
-let isMenuOpen = false;
-
-function toggleMenu() {
-  isMenuOpen = !isMenuOpen;
-}
----
-
-<!-- <header
-  class="flex w-3/4 md:w-full justify-center items-center py-5 fixed top-0 z-10"
+<header
+  class="m-2 hidden md:block rounded-full justify-center items-center py-5 fixed top-0 z-10 bg-slate-800 px-4 opacity-50 hover:opacity-100"
 >
-  <nav
-    class="flex flex-row gap-x-10 opacity-50 bg-slate-800 hover:opacity-100 transition p-4 rounded-3xl"
-  >
+  <nav class="flex flex-row gap-x-10 bg-slate-800 transition rounded-3xl">
     <a class="text-" href="#top">Home</a>
     <a class="" href="#about">About me</a>
     <a class="" href="#experience">Experience</a>
     <a class="" href="#projects">Projects</a>
     <a class="" href="#contact">Contact</a>
-  </nav> 
-
-  
-</header>
- -->
-<header
-  class=" m-2  rounded-full justify-center items-center py-5 fixed top-0 z-10 bg-slate-800 px-4 opacity-50"
->
-  
-  <button id="menu-toggle" class="block md:hidden text-white">
-    <svg
-      xmlns="http://www.w3.org/2000/svg"
-      class="h-6 w-6"
-      fill="none"
-      viewBox="0 0 24 24"
-      stroke="currentColor"
-    >
-      <path
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        d="M4 6h16M4 12h16m-7 6h7"></path>
-    </svg>
-  </button>
-
-  <nav
-    id="menu"
-    class="  justify-center hidden absolute md:static top-16 right-0 md:flex md:flex-row md:gap-x-10 bg-slate-800 md:opacity-50 hover:md:opacity-100 transition p-4 md:p-0 rounded-lg md:rounded-none flex-col gap-y-4 w-3/4 md:w-auto"
-  >
-    <a class="text-white " href="#top">Home</a>
-    <a class="text-white " href="#about">About me</a>
-    <a class="text-white " href="#experience">Experience</a>
-    <a class="text-white " href="#projects">Projects</a>
-    <a class="text-white " href="#contact">Contact</a>
   </nav>
 </header>
-
-<script>
-  document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.getElementById("menu-toggle");
-    const menu = document.getElementById("menu");
-
-    menuToggle?.addEventListener("click", () => {
-      menu?.classList.toggle("hidden");
-    });
-  });
-</script>
