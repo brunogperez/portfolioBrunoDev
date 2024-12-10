@@ -11,43 +11,30 @@ import Tailwind from "../icons/Tailwind.astro";
 import MongoDB from "../icons/MongoDB.astro";
 import NodeJS from "../icons/NodeJS.astro";
 import Express from "../icons/Express.astro";
+
+const skills = [
+  { skill: ReactJS, className: "size-8 md:size-12" },
+  { skill: Angular, className: "size-8 md:size-12" },
+  { skill: MySQL, className: "size-8 md:size-12" },
+  { skill: Javascript, className: "size-8 md:size-12" },
+  { skill: Typescript, className: "size-8 md:size-12" },
+  { skill: HTML, className: "size-8 md:size-12" },
+  { skill: CSS3, className: "size-10 md:size-16" },
+  { skill: Git, className: "size-8 md:size-12" },
+  { skill: Tailwind, className: "size-8 md:size-12" },
+  { skill: MongoDB, className: "size-8 md:size-12" },
+  { skill: NodeJS, className: "size-8 md:size-12" },
+  { skill: Express, className: "size-8 md:size-12" },
+];
 ---
- 
-<div class="w-3/4 flex flex-wrap gap-10 items-center justify-center m-auto ">
-  <div class="">
-    <ReactJS class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <Angular class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <MySQL class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <Javascript class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <Typescript class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <HTML class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <CSS3 class="size-10 md:size-16" />
-  </div>
-  <div class="">
-    <Git class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <Tailwind class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <MongoDB class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <NodeJS class="size-8 md:size-12" />
-  </div>
-  <div class="">
-    <Express class="size-8 md:size-12" />
-  </div>
+
+<div class="w-3/4 flex flex-wrap gap-10 items-center justify-center m-auto">
+  {
+    skills.map(({ skill: Icon, className }) => (
+      <div>
+        <Icon class={className} />
+      </div>
+    ))
+  }
 </div>
+
