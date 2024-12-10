@@ -1,0 +1,23 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+const EXPERIENCE = [
+  {
+    date: "Actually",
+    title: "Frontend Developer",
+    company: "Freelance",
+    description:
+      "Desarrollé páginas web y e-commerce utilizando ReactJS, paneles de control para instituciones con Angular, y aplicaciones móviles con React Native. Implementé el patrón Redux en dichos proyectos, garantizando eficiencia y escalabilidad en cada solución.",
+    link: "",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
