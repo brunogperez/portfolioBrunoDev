@@ -9,6 +9,7 @@ import ReactJS from "../icons/ReactJS.astro";
 import MongoDB from "../icons/MongoDB.astro";
 import NodeJS from "../icons/NodeJS.astro";
 import Express from "../icons/Express.astro";
+import Expo from "../icons/Expo.astro";
 
 const TAGS = {
   ANGULAR: {
@@ -31,6 +32,11 @@ const TAGS = {
     class: "bg-[#003159] dark:text-white",
     icon: ReactJS,
   },
+  REACTNATIVE: {
+    name: "React Native",
+    class: "bg-[#003159] dark:text-white",
+    icon: ReactJS,
+  },
   MONGO: {
     name: "MongoDB",
     class: "bg-[#003159] dark:text-white",
@@ -45,6 +51,11 @@ const TAGS = {
     name: "Express",
     class: "bg-[#003159] dark:text-white",
     icon: Express,
+  },
+  EXPO: {
+    name: "Expo",
+    class: "bg-[#003159] dark:text-white",
+    icon: Expo,
   },
 };
 const PROJECTS = [
@@ -64,6 +75,14 @@ const PROJECTS = [
     github: "https://github.com/brunogperez/dbMartinezWinery",
     image: "/projects/Diagrama ER MartinezWinery.webp",
     tags: [TAGS.MYSQL],
+  },
+  {
+    title: "Digital Age  - React Native App",
+    description:
+      "App mobile realizada con React Native y Expo sobre un e-commerce de una empresa de tecnología. En la misma se trabajó con Redux y bases de datos SQLite para el eficiente manejo de datos.",
+    github: "https://github.com/brunogperez/dbMartinezWinery",
+    image: "/projects/digitalAGEmobile.webp",
+    tags: [TAGS.EXPO],
   },
   {
     title: "Digital Age - E-commerce (Backend)",
