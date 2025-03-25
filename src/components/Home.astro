@@ -12,57 +12,57 @@ import Curriculum from "../icons/Curriculum.astro";
 ---
 
 <div class="h-3/4 md:pt-40 md:pb-20 justify-center items-center flex flex-col">
-  <div
-    class="flex flex-col lg:flex-row justify-center items-center gap-x-4 md:pb-6 pb-4"
+ <div
+  class="flex flex-col lg:flex-row justify-center items-center gap-x-4 md:pb-6 pb-4"
+ >
+  <h1 class="text-3xl lg:text-5xl font-bold flex pb-1 items-center">
+   Hey, I'm Bruno
+  </h1>
+  <a
+   href="https://www.linkedin.com/in/bruno-perez-381789212/"
+   target="_blank"
+   rel="noonpener"
+   class="justify-center items-center"><Badge>Avaible for Hire</Badge></a
   >
-    <h1 class="text-3xl lg:text-5xl font-bold flex pb-1 items-center">
-      Hey, I'm Bruno
-    </h1>
-    <a
-      href="https://www.linkedin.com/in/bruno-perez-381789212/"
-      target="_blank"
-      rel="noonpener"
-      class="justify-center items-center"><Badge>Avaible for Hire</Badge></a
-    >
-  </div>
-  <h2
-    class="text-xl lg:text-2xl opacity-80 text-center md:text-pretty max-w-[700px] justify-center md:justify-center px-10 md:px-4"
+ </div>
+ <h2
+  class="text-xl lg:text-2xl opacity-80 text-center md:text-pretty max-w-[700px] justify-center md:justify-center px-10 md:px-4"
+ >
+  Frontend Developer based in Mendoza, Argentina. I specialize in ReactJS and
+  create unique apps.
+ </h2>
+ <nav class="flex gap-x-4 mt-4 flex-wrap justify-center md:justify-start">
+  <SocialPill href="https://www.linkedin.com/in/bruno-perez-381789212/">
+   <LinkedInIcon class="size-4 md:size-6" />
+   LinkedIn
+  </SocialPill>
+  <SocialPill href="https://github.com/brunogperez">
+   <GitHubIcon class="size-4 md:size-6" />
+   GitHub
+  </SocialPill>
+  <SocialPill
+   href="https://mail.google.com/mail/?view=cm&to=brunogperez91@gmail.com"
+   target="_blank"
+   rel="noopener noreferrer"
   >
-    Frontend Developer based in Mendoza, Argentina. I specialize in ReactJS and
-    create unique apps.
-  </h2>
-  <nav class="flex gap-x-4 mt-4 flex-wrap justify-center md:justify-start">
-    <SocialPill href="https://www.linkedin.com/in/bruno-perez-381789212/">
-      <LinkedInIcon class="size-4 md:size-6" />
-      LinkedIn
-    </SocialPill>
-    <SocialPill href="https://github.com/brunogperez">
-      <GitHubIcon class="size-4 md:size-6" />
-      GitHub
-    </SocialPill>
-    <SocialPill
-      href="https://mail.google.com/mail/?view=cm&to=brunogperez91@gmail.com"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <MailIcon class="size-4 md:size-6" />
-      brunogperez91@gmail.com
-    </SocialPill>
-    <SocialPill
-      type="button"
-      class="rounded-full flex items-center p-2 px-4 dark:text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800"
-      download="cvBrunoPerez.pdf"
-      href="/cvBrunoPerez.pdf"
-    >
-      <Curriculum class="size-4 md:size-6" />
-      Descargar CV
-    </SocialPill>
-  </nav>
-  <SectionContainer>
-    <TitleSection>
-      <Code class="size-6 md:size-8" />
-      Skills
-    </TitleSection>
-    <Skills />
-  </SectionContainer>
+   <MailIcon class="size-4 md:size-6" />
+   brunogperez91@gmail.com
+  </SocialPill>
+  <SocialPill
+   type="button"
+   class="rounded-full flex items-center p-2 px-4 text-white bg-gradient-to-br from-purple-600 to-blue-500 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-blue-800"
+   download="cvBrunoPerez.pdf"
+   href="/cvBrunoPerez.pdf"
+  >
+   <Curriculum class="size-4 md:size-6" />
+   Descargar CV
+  </SocialPill>
+ </nav>
+ <SectionContainer>
+  <TitleSection>
+   <Code class="size-6 md:size-8" />
+   Skills
+  </TitleSection>
+  <Skills />
+ </SectionContainer>
 </div>
